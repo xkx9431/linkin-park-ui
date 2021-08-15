@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+}
+
+.indicator-empty {
+  border: 1px solid greenyellow;
+  color: green;
+  background-color: cyan;
+  height: 30px;
+  border-radius: 0.5rem;
+}
+
+.indicator-occupied {
+  border: 1px solid greenyellow;
+  color: red;
+  background-color: cyan;
+  height: 30px;
+  border-radius: 0.5rem;
+}
+
