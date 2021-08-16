@@ -9,7 +9,7 @@ export default function SimpleContainer(props) {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="md" >
-        <Typography component="div" style={{ backgroundColor: 'rgb(84, 58, 100)', height: '100vh' }} >
+        <Typography component="div" style={{ backgroundColor: 'rgb(84, 58, 100)', height: '100vh', display:'flex-column'}} >
             {children}
         </Typography>
       </Container>

@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         whiteSpace: 'nowrap',
         marginBottom: theme.spacing(1),
-        fontSize:'2rem',
+        fontSize:'1.75rem',
         fontWeight:600,
         color: 'rgb(255, 53, 126)',
     },
@@ -22,13 +22,16 @@ const useStyles = makeStyles((theme) => ({
     },
     progess:{
         display:'inline-block',
-        marginLeft:'0.5rem',
-        transform: 'translateY(10px)',
+        transform: 'translateY(8px)',
         color:'rgb(84, 58, 100)'
     },
-    colck:{
-        fontSize: 40 ,
+    clock:{
+        fontSize:'2.5rem',
         transform: 'translateY(8px)'
+    },
+    remainNum:{
+        color: '#f50057',
+        fontSize:'2rem',
     }
     
     
@@ -60,12 +63,12 @@ export default function Descption( props){
     return (
         <div>
             <Typography variant="subtitle1" className={classes.title} gutterBottom>
-                <div className={classes.description}><AccessAlarmIcon  className={classes.colck}/> {now} </div>
+                <div className={classes.description}><AccessAlarmIcon  className={classes.clock}/> {now} </div>
                 <div className={classes.description}>
                     <span className={classes.progess}>
                         <CircularProgress color="secondary" variant="determinate" value={100*(TOTAL_CARS_SLOTS - emptySlots)/TOTAL_CARS_SLOTS} />
                     </span>
-                    <span>
+                    <span  className={classes.remainNum} >
                         { `  ${emptySlots}  ` } 
                     </span>
                      parking slots free

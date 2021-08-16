@@ -9,9 +9,10 @@ function App() {
     <div className="App">
       <Layout.Box>
         <Header></Header>
-        <Layout.SlotStatus carsNum = {8 }>
+        <Layout.SlotStatus carsNum = { 15 }>
           < Car />
         </Layout.SlotStatus>
+      <Layout.Footer/>
       </Layout.Box>
     </div>
   );
