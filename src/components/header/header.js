@@ -39,10 +39,10 @@ export default function DenseAppBar() {
             <MenuIcon />
           </IconButton> */}
           <Typography variant="h2" color="inherit"  className={classes.title}>
-            Linkin Car 
+            Linkin Park 
           </Typography>
           <Typography variant="h6" color="inherit" className={classes.subTitle} > 
-           A real time parking slots detect system
+            A real time parking slots detect system
           </Typography>
         </Toolbar>
       </AppBar>
