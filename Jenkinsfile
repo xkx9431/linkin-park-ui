@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Run Docker container on Jenkins Agent') {
         steps {
-                sh "docker run -d -p 3005:3005 xkx9431/linkin-park-ui-dev"
+                sh "docker run -d -p 3000:3000 xkx9431/linkin-park-ui-dev"
             }
         }
     }

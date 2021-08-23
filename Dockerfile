@@ -17,7 +17,7 @@ RUN yarn
 # add app
 COPY . ./
 
-EXPOSE 3005
+EXPOSE 3000
 
 # start app
 CMD ["yarn", "start"]
