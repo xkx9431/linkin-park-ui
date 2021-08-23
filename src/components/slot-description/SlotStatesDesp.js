@@ -71,7 +71,7 @@ export default function Descption( props){
                     <span  className={classes.remainNum} >
                         { `  ${emptySlots}  ` } 
                     </span>
-                     parking slots free
+                    parking slots free
                 </div> 
             </Typography>
         </div>

@@ -37,8 +37,8 @@ export default function CSSGrid( props ) {
     <div>
     <SlotStatesDesp carsNum={carsNum}/>
     <Grid container spacing={2}>
-        {slotsStatus.map( (slot)=>(
-            <Grid item xs={2}>
+        {slotsStatus.map( (slot,index)=>(
+            <Grid item xs={2} key={index}>
                 <Indicator empty={ slot }></Indicator>
             </Grid>
         )) }
